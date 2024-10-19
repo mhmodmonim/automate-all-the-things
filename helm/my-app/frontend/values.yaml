@@ -1,8 +1,8 @@
-appName: AATT_APP_NAME-frontend # This value was modified by the initial-setup python script
+appName: devautops-frontend # This value was modified by the initial-setup python script
 
 deployment:
   image:
-    repository: AATT_DOCKERHUB_USERNAME/AATT_APP_NAME-frontend # This value was modified by the initial-setup python script
+    repository: mahmoudadev/devautops-frontend # This value was modified by the initial-setup python script
 
 configmap:
   images: |-
