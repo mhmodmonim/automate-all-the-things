@@ -11,7 +11,7 @@ resource "aws_instance" "ssh_host" {
   ami           = "ami-089146c5626baa6bf" # Ubuntu 22.04 eu-north-1
   # ami           = "ami-024e6efaf93d85776" # Ubuntu 22.04 us-east-2
 
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   key_name      = aws_key_pair.ssh-keys.key_name
 
   subnet_id              = aws_subnet.public-subnet-c.id
