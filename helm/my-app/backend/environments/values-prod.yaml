@@ -5,4 +5,4 @@ deployment:
     tag: 0
   replicas: 1
   env:
-    redis_host: ::error::Terraform exited with code 1.
+    redis_host: galaxy-prod-elascache-rep-group.yeiiy9.ng.0001.use1.cache.amazonaws.com
