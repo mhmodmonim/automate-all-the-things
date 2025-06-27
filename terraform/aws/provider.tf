@@ -12,10 +12,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "devautops-tf-state-bucket"          # This value was modified by the initial-setup python script
-    dynamodb_table = "devautops-tf-state-dynamo-db-table" # This value was modified by the initial-setup python script
+    bucket         = "galaxy-tf-state-bucket"          # This value was modified by the initial-setup python script
+    dynamodb_table = "galaxy-tf-state-dynamo-db-table" # This value was modified by the initial-setup python script
     key            = "terraform.tfstate"
-    region         = "eu-north-1" # This value was modified by the initial-setup python script
+    region         = "us-east-1" # This value was modified by the initial-setup python script
     encrypt        = true
   }
 }
