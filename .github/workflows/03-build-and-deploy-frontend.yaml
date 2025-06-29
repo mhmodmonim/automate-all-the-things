@@ -13,6 +13,7 @@ env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   APP_NAME: devautops # This value was modified by the initial-setup python script
+  CLUSTER_NAME: galaxy-cluster
   SERVICE: frontend
 
 jobs:
@@ -100,7 +101,7 @@ jobs:
           git push
 
       - name: Configure kubeconfig
-        run: aws eks --region $AWS_REGION update-kubeconfig --name $APP_NAME-cluster
+        run: aws eks --region $AWS_REGION update-kubeconfig --name $CLUSTER_NAME
 
       - name: Get URL
         run: |
