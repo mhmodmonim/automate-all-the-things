@@ -9,7 +9,7 @@ on:
       - 'my-app/frontend/**'
 
 env:
-  AWS_REGION: eu-north-1 # This value was modified by the initial-setup python script
+  AWS_REGION: us-east-1 # This value was modified by the initial-setup python script
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   APP_NAME: devautops # This value was modified by the initial-setup python script
