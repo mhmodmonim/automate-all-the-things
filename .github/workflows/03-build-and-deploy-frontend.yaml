@@ -62,7 +62,7 @@ jobs:
           git push
 
       - name: Configure kubeconfig
-        run: aws eks --region $AWS_REGION update-kubeconfig --name $APP_NAME-cluster
+        run: aws eks --region $AWS_REGION update-kubeconfig --name $CLUSTER_NAME
 
       - name: Get URL
         run: |
@@ -141,7 +141,7 @@ jobs:
           git push
 
       - name: Configure kubeconfig
-        run: aws eks --region $AWS_REGION update-kubeconfig --name $APP_NAME-cluster
+        run: aws eks --region $AWS_REGION update-kubeconfig --name $CLUSTER_NAME
 
       - name: Get URL
         run: |
