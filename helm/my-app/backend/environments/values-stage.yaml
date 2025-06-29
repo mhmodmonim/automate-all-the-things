@@ -2,7 +2,7 @@ environment: stage
 
 deployment:
   image:
-    tag: 0
+    tag: 3
   replicas: 1
   env:
     redis_host: galaxy-stage-elascache-rep-group.v2dhoo.ng.0001.use1.cache.amazonaws.com
