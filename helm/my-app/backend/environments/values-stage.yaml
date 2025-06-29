@@ -5,4 +5,4 @@ deployment:
     tag: 0
   replicas: 1
   env:
-    redis_host: galaxy-stage-elascache-rep-group.yeiiy9.ng.0001.use1.cache.amazonaws.com
+    redis_host: galaxy-stage-elascache-rep-group.v2dhoo.ng.0001.use1.cache.amazonaws.com
